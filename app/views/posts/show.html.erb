@@ -1,0 +1,7 @@
+<%= content_tag(:h1, @post.title) %>
+
+<div class="my-5 border rounded p-5">
+  <%= @post.content %>
+</div>
+
+<%= link_to "Back to posts", posts_path, class: "btn" %>

@@ -1,0 +1,12 @@
+<h1 class="font-bold">Posts</h1>
+
+<div class="post-container">
+  <% @posts.each do |post| %>
+    <%= link_to content_tag(:div, post.title, class: "post"), post_path(post) %>
+  <% end %>
+</div>
+
+<div class="flex">
+  <%= link_to "Home", root_path, class: "btn"  %>
+  <%= link_to "New Post", new_post_path, class: "btn"  %>
+</div>

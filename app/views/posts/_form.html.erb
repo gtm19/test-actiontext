@@ -1,0 +1,11 @@
+<%= form_with model: @post do |form| %>
+  <div class="field">
+    <%= form.label :title, class: "block text-sm" %>
+    <%= form.text_field :title, class: "rounded mt-1 mb-4" %>
+    <%= form.rich_text_area :content %>
+    <%= content_tag(:div, class: "flex") do %>
+      <%= link_to "Back to posts", posts_path, class: "btn" %>
+      <%= form.submit "Submit post", class: "btn" %>
+    <% end %>
+  </div>
+<% end %>
