@@ -1,24 +1,15 @@
-# README
+# test-actiontext
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Setup is pretty simple.
 
-Things you may want to cover:
+First run `bundle install` to install Ruby dependencies.
 
-* Ruby version
+When this is done, run
 
-* System dependencies
+```sh
+rails db:create db:migrate
+```
 
-* Configuration
+To get your database set up.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Then run `rails s` to serve the app and go to `localhost:3000` to write some posts.
